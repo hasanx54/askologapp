@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aşkolog KVKK Aydınlatma Metni - 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında haklarınız ve veri işleme politikalarımız.">
+    <title>KVKK Aydınlatma Metni - Aşkolog</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .legal-page {
+            padding: 120px 0 80px;
+            background: var(--white);
+        }
+
+        .legal-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .legal-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(135deg, rgba(255, 68, 88, 0.1), rgba(255, 107, 157, 0.1));
+            border: 1px solid rgba(255, 68, 88, 0.2);
+            border-radius: var(--radius-full);
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .legal-title {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .legal-date {
+            color: var(--text-gray);
+            font-size: 1rem;
+        }
+
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .legal-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin: 2.5rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .legal-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin: 2rem 0 1rem;
+        }
+
+        .legal-content p {
+            color: var(--text-gray);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .legal-content ul,
+        .legal-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .legal-content li {
+            color: var(--text-gray);
+            line-height: 1.9;
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+        }
+
+        .legal-content strong {
+            color: var(--dark-color);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255, 68, 88, 0.05), rgba(255, 107, 157, 0.05));
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .contact-box {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--white);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-table th,
+        .info-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .info-table th {
+            background: var(--light-bg);
+            font-weight: 600;
+            color: var(--dark-color);
+        }
+
+        .info-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .rights-list {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .rights-list li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .rights-list li:last-child {
+            border-bottom: none;
+        }
+
+        .rights-list li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--primary-color);
+            margin-right: 1rem;
+        }
+
+        .form-section {
+            background: var(--light-bg);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            margin: 3rem 0;
+        }
+
+        .form-section h3 {
+            margin-top: 0;
+            color: var(--dark-color);
+        }
+
+        @media (max-width: 768px) {
+            .legal-title {
+                font-size: 2rem;
+            }
+
+            .legal-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .legal-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .legal-content h3 {
+                font-size: 1.25rem;
+            }
+
+            .info-table {
+                font-size: 0.9rem;
+            }
+
+            .info-table th,
+            .info-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-heart"></i>
+                    <span class="logo-text">Aşkolog</span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                        <li><a href="../index.html#features" class="nav-link">Özellikler</a></li>
+                        <li><a href="../index.html#download" class="nav-link">İndir</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                    </ul>
+                    <div class="nav-buttons">
+                        <a href="../index.html#download" class="btn btn-primary">Ücretsiz Başla</a>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Legal Page -->
+    <section class="legal-page">
+        <div class="container">
+            <div class="legal-header">
+                <span class="legal-badge">
+                    <i class="fas fa-shield-alt"></i> Kişisel Verilerin Korunması
+                </span>
+                <h1 class="legal-title">KVKK Aydınlatma Metni</h1>
+                <p class="legal-date">Son Güncelleme: 21 Ekim 2024</p>
+            </div>
+
+            <div class="legal-content">
+                <div class="highlight-box">
+                    <p><strong>Önemli Bilgilendirme:</strong> 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca hazırlanan bu aydınlatma metni, kişisel verilerinizin işlenmesine ilişkin detaylı bilgileri içermektedir. Haklarınız ve veri işleme süreçlerimiz hakkında bilgi sahibi olmanız için lütfen dikkatlice okuyunuz.</p>
+                </div>
+
+                <h2>1. Veri Sorumlusu ve İletişim Bilgileri</h2>
+                <p>
+                    6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, kişisel verileriniz veri sorumlusu sıfatıyla Aşkolog Teknoloji A.Ş. ("Aşkolog" veya "Şirket") tarafından aşağıda açıklanan kapsamda işlenebilecektir.
+                </p>
+
+                <table class="info-table">
+                    <tr>
+                        <th>Veri Sorumlusu</th>
+                        <td>Aşkolog Teknoloji A.Ş.</td>
+                    </tr>
+                    <tr>
+                        <th>Mersis No</th>
+                        <td>0123456789000000</td>
+                    </tr>
+                    <tr>
+                        <th>Adres</th>
+                        <td>Maslak Mahallesi, Büyükdere Caddesi No:123, Sarıyer/İstanbul, Türkiye</td>
+                    </tr>
+                    <tr>
+                        <th>Telefon</th>
+                        <td>+90 (212) 000 00 00</td>
+                    </tr>
+                    <tr>
+                        <th>E-posta</th>
+                        <td>kvkk@askolog.com</td>
+                    </tr>
+                    <tr>
+                        <th>KEP Adresi</th>
+                        <td>askolog@hs03.kep.tr</td>
+                    </tr>
+                    <tr>
+                        <th>Website</th>
+                        <td>www.askolog.com</td>
+                    </tr>
+                </table>
+
+                <h2>2. Kişisel Verilerin Toplanması, İşlenmesi ve Hukuki Sebepleri</h2>
+
+                <h3>2.1. İşlenen Kişisel Veri Kategorileri</h3>
+                <p>Aşkolog platformu üzerinde aşağıdaki kategorilerdeki kişisel verileriniz işlenmektedir:</p>
+
+                <ul>
+                    <li><strong>Kimlik Bilgileri:</strong> Ad, soyad, T.C. kimlik numarası (doğrulama için), doğum tarihi, cinsiyet, profil fotoğrafı</li>
+                    <li><strong>İletişim Bilgileri:</strong> Telefon numarası, e-posta adresi, adres bilgileri</li>
+                    <li><strong>Konum Verileri:</strong> GPS konum bilgisi, IP adresi</li>
+                    <li><strong>Görsel ve İşitsel Kayıtlar:</strong> Profil fotoğrafları, video görüşme kayıtları (güvenlik amaçlı)</li>
+                    <li><strong>Müşteri İşlem Bilgileri:</strong> Platform kullanım geçmişi, eşleşme bilgileri, mesajlaşma kayıtları, beğeni ve tercihler</li>
+                    <li><strong>İşlem Güvenliği Bilgileri:</strong> IP adresi, cihaz ID, MAC adresi, çerez kayıtları, güvenlik soruları</li>
+                    <li><strong>Fiziksel Mekan Güvenlik Bilgileri:</strong> Kamera kayıtları (ofis ziyaretleri için)</li>
+                    <li><strong>Finansal Bilgiler:</strong> Banka hesap bilgileri, kredi kartı bilgileri (son 4 hane), ödeme işlem geçmişi</li>
+                    <li><strong>Mesleki Deneyim Bilgileri:</strong> Meslek, eğitim durumu, iş yeri bilgileri (isteğe bağlı)</li>
+                    <li><strong>Pazarlama Bilgileri:</strong> İlgi alanları, hobiler, tercihler, alışkanlıklar</li>
+                    <li><strong>Hukuki İşlem Bilgileri:</strong> Şikayet, dava ve icra takip bilgileri</li>
+                </ul>
+
+                <h3>2.2. Kişisel Verilerin İşlenme Amaçları</h3>
+                <p>Kişisel verileriniz aşağıdaki amaçlarla işlenmektedir:</p>
+
+                <ul>
+                    <li>Platform üyelik işlemlerinin gerçekleştirilmesi ve yönetilmesi</li>
+                    <li>Kullanıcı kimlik doğrulama ve güvenlik süreçlerinin yürütülmesi</li>
+                    <li>Eşleştirme algoritmasının çalıştırılması ve uyumlu kullanıcıların belirlenmesi</li>
+                    <li>Platform üzerinden sunulan hizmetlerin sağlanması ve yönetilmesi</li>
+                    <li>Kullanıcı deneyiminin kişiselleştirilmesi ve iyileştirilmesi</li>
+                    <li>İletişim faaliyetlerinin yürütülmesi (bildirimler, güncellemeler, duyurular)</li>
+                    <li>Pazarlama ve kampanya faaliyetlerinin planlanması ve icrası</li>
+                    <li>Platform güvenliğinin sağlanması ve yetkisiz erişimin önlenmesi</li>
+                    <li>Dolandırıcılık, sahtecilik ve kötüye kullanım tespiti ve önlenmesi</li>
+                    <li>Kullanıcı şikayet ve talep süreçlerinin yönetilmesi</li>
+                    <li>Ödeme işlemlerinin gerçekleştirilmesi ve finansal süreçlerin yürütülmesi</li>
+                    <li>Yasal yükümlülüklerin yerine getirilmesi ve resmi makam taleplerinin karşılanması</li>
+                    <li>İstatistiksel analiz ve raporlama faaliyetlerinin yürütülmesi</li>
+                    <li>Platform performansının izlenmesi ve teknik sorunların giderilmesi</li>
+                    <li>Hukuki işlemlerin takibi ve yürütülmesi</li>
+                    <li>Acil durum yönetimi ve kriz müdahale süreçlerinin yürütülmesi</li>
+                </ul>
+
+                <h3>2.3. Kişisel Verilerin İşlenme Hukuki Sebepleri</h3>
+                <p>Kişisel verileriniz KVKK'nın 5. ve 6. maddelerinde belirtilen aşağıdaki hukuki sebeplere dayanarak işlenmektedir:</p>
+
+                <ul>
+                    <li><strong>Açık Rızanız:</strong> Özel nitelikli kişisel veriler ve pazarlama faaliyetleri için alınan açık rızanız</li>
+                    <li><strong>Sözleşmenin İfası:</strong> Platform kullanım sözleşmesinin kurulması ve ifası için gerekli olması</li>
+                    <li><strong>Hukuki Yükümlülük:</strong> Kanunlarda açıkça öngörülmüş olması (vergi, ticaret kanunu vb.)</li>
+                    <li><strong>Meşru Menfaat:</strong> Veri sorumlusunun meşru menfaatleri için veri işlemenin zorunlu olması</li>
+                    <li><strong>İlgili Kişinin Temel Hak ve Özgürlüklerine Zarar Vermemek Kaydıyla:</strong> Veri sorumlusunun meşru menfaatleri için veri işlenmesinin zorunlu olması</li>
+                </ul>
+
+                <h2>3. Kişisel Verilerin Toplanma Yöntemleri</h2>
+                <p>Kişisel verileriniz aşağıdaki yöntemlerle toplanmaktadır:</p>
+
+                <ul>
+                    <li>Mobil uygulama ve web sitesi üzerinden kullanıcı kayıt formları</li>
+                    <li>Platform kullanımı sırasında otomatik olarak (log kayıtları, çerezler)</li>
+                    <li>Müşteri hizmetleri ile yapılan iletişimler (e-posta, telefon, canlı destek)</li>
+                    <li>Sosyal medya hesapları üzerinden oturum açma (Facebook, Google, Apple ID)</li>
+                    <li>Anketler, yarışmalar ve etkinlik katılımları</li>
+                    <li>Üçüncü taraf hizmet sağlayıcılardan (ödeme kuruluşları, kimlik doğrulama servisleri)</li>
+                    <li>Fiziksel formlar ve başvurular</li>
+                    <li>Kamera kayıt sistemleri (ofis ziyaretlerinde)</li>
+                </ul>
+
+                <h2>4. Kişisel Verilerin Aktarılması</h2>
+
+                <h3>4.1. Yurt İçi Aktarımlar</h3>
+                <p>Kişisel verileriniz, yukarıda belirtilen amaçların gerçekleştirilmesi doğrultusunda, KVKK'nın 8. ve 9. maddelerinde belirtilen kişisel veri işleme şartları ve amaçları çerçevesinde aşağıdaki taraflara aktarılabilmektedir:</p>
+
+                <ul>
+                    <li><strong>İş Ortaklarımız:</strong> Hizmet sağlayıcılar, teknoloji partnerleri, pazarlama ajansları</li>
+                    <li><strong>Tedarikçiler:</strong> Bulut hizmet sağlayıcılar, sunucu barındırma firmaları, veri merkezi işletmecileri</li>
+                    <li><strong>Ödeme Kuruluşları:</strong> Bankalar, ödeme işlemcileri, sanal pos sağlayıcılar</li>
+                    <li><strong>Analitik Hizmet Sağlayıcılar:</strong> Platform performans ve kullanıcı davranış analizi yapan firmalar</li>
+                    <li><strong>Müşteri Hizmetleri Sağlayıcıları:</strong> Çağrı merkezi ve canlı destek hizmeti sunan firmalar</li>
+                    <li><strong>Hukuki ve Mali Danışmanlar:</strong> Avukatlar, mali müşavirler, denetim firmaları</li>
+                    <li><strong>Yetkili Kamu Kurum ve Kuruluşları:</strong> Mahkemeler, savcılıklar, emniyet, vergi dairesi, BTK vb.</li>
+                    <li><strong>Düzenleyici ve Denetleyici Kurumlar:</strong> KVKK Kurulu, Rekabet Kurumu vb.</li>
+                </ul>
+
+                <h3>4.2. Yurt Dışı Aktarımlar</h3>
+                <p>
+                    Kişisel verileriniz, yurt dışında yerleşik bazı hizmet sağlayıcılarımız (özellikle bulut hizmetleri ve sunucu barındırma) ile paylaşılabilmektedir. Yurt dışına veri aktarımı, KVKK'nın 9. maddesi uyarınca:
+                </p>
+
+                <ul>
+                    <li>Açık rızanızın alınması,</li>
+                    <li>Yeterli koruma bulunan ülkelere aktarım yapılması, veya</li>
+                    <li>Yeterli koruma bulunmaması durumunda Türkiye'deki ve ilgili yabancı ülkedeki veri sorumlularının yeterli bir korumayı yazılı olarak taahhüt etmeleri ve Kurul'un izninin bulunması</li>
+                </ul>
+                <p>şartlarına bağlı olarak gerçekleştirilmektedir.</p>
+
+                <div class="highlight-box">
+                    <p><strong>Önemli:</strong> Kişisel verileriniz hiçbir şekilde açık rızanız olmaksızın pazarlama amacıyla üçüncü taraflara satılmamakta veya kiralanmamaktadır.</p>
+                </div>
+
+                <h2>5. Kişisel Veri Sahibinin Hakları</h2>
+                <p>
+                    KVKK'nın 11. maddesi uyarınca, kişisel veri sahipleri olarak aşağıdaki haklara sahipsiniz:
+                </p>
+
+                <div class="rights-list">
+                    <ul style="list-style: none; padding: 0;">
+                        <li><strong>Bilgi Talep Etme:</strong> Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+                        <li><strong>Bilgi İsteme:</strong> Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme</li>
+                        <li><strong>Amaç Öğrenme:</strong> Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+                        <li><strong>Üçüncü Kişileri Öğrenme:</strong> Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme</li>
+                        <li><strong>Düzeltme Talep Etme:</strong> Kişisel verilerinizin eksik veya yanlış işlenmiş olması halinde bunların düzeltilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerinizin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
+                        <li><strong>Silme ve Yok Etme:</strong> KVKK'nın 7. maddesinde öngörülen şartlar çerçevesinde kişisel verilerinizin silinmesini veya yok edilmesini isteme ve bu kapsamda yapılan işlemin kişisel verilerinizin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
+                        <li><strong>İtiraz Etme:</strong> İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
+                        <li><strong>Tazminat Talep Etme:</strong> Kişisel verilerinizin kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız halinde zararın giderilmesini talep etme</li>
+                    </ul>
+                </div>
+
+                <h2>6. Kişisel Veri Sahibi Olarak Haklarınızı Kullanma Yöntemleri</h2>
+                <p>
+                    KVKK'nın 13. maddesi uyarınca, yukarıda belirtilen haklarınızı kullanmak için aşağıdaki yöntemlerle başvuruda bulunabilirsiniz:
+                </p>
+
+                <h3>6.1. Başvuru Yöntemleri</h3>
+                <ul>
+                    <li><strong>Yazılı Başvuru:</strong> Kimliğinizi tespit edici belgeler ile birlikte "Maslak Mahallesi, Büyükdere Caddesi No:123, Sarıyer/İstanbul" adresine ıslak imzalı dilekçe ile başvurabilirsiniz</li>
+                    <li><strong>Kayıtlı Elektronik Posta (KEP):</strong> askolog@hs03.kep.tr adresine güvenli elektronik imza ile başvurabilirsiniz</li>
+                    <li><strong>E-posta:</strong> Kayıtlı elektronik posta adresiniz ile kvkk@askolog.com adresine başvurabilirsiniz</li>
+                    <li><strong>Mobil İmza:</strong> Kayıtlı telefonunuzdan mobil imza ile kvkk@askolog.com adresine başvurabilirsiniz</li>
+                    <li><strong>Platformumuz Üzerinden:</strong> Uygulama içi "KVKK Başvuru Formu" aracılığıyla başvurabilirsiniz</li>
+                </ul>
+
+                <h3>6.2. Başvurunuzda Bulunması Gereken Bilgiler</h3>
+                <p>Başvurunuzda aşağıdaki bilgilerin bulunması gerekmektedir:</p>
+                <ul>
+                    <li>Ad, soyad</li>
+                    <li>T.C. kimlik numarası (Türk vatandaşları için)</li>
+                    <li>Pasaport numarası (yabancı uyruklu kişiler için)</li>
+                    <li>Tebligata esas yerleşim yeri veya iş yeri adresi</li>
+                    <li>Varsa bildirime esas elektronik posta adresi, telefon ve faks numarası</li>
+                    <li>Talep konusu (hangi hakkınızı kullanmak istediğiniz)</li>
+                    <li>Varsa talep konusuna ilişkin bilgi ve belgeler</li>
+                </ul>
+
+                <h3>6.3. Başvuruların Değerlendirilmesi</h3>
+                <p>
+                    Başvurularınız, talebin niteliğine göre en kısa sürede ve en geç 30 (otuz) gün içinde ücretsiz olarak sonuçlandırılacaktır. Ancak, işlemin ayrıca bir maliyeti gerektirmesi halinde, Kişisel Verileri Koruma Kurulu tarafından belirlenen tarifedeki ücret talep edilebilecektir.
+                </p>
+
+                <p>
+                    Başvurularınız KVKK ve ilgili mevzuata uygun olarak değerlendirilecek ve yanıtlanacaktır. Başvurunuzun reddedilmesi halinde, ret gerekçesi yazılı olarak veya elektronik ortamda size bildirilecektir.
+                </p>
+
+                <div class="form-section">
+                    <h3><i class="fas fa-file-alt"></i> KVKK Başvuru Formu</h3>
+                    <p>
+                        Haklarınızı kullanmak için aşağıdaki başvuru formunu doldurabilir veya yukarıda belirtilen iletişim kanallarını kullanabilirsiniz.
+                    </p>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="https://www.askolog.com/kvkk-basvuru-formu.pdf" class="btn btn-primary" download>
+                            <i class="fas fa-download"></i> Başvuru Formunu İndir
+                        </a>
+                    </p>
+                </div>
+
+                <h2>7. Kişisel Verilerin Saklanma Süresi</h2>
+                <p>
+                    Kişisel verileriniz, işlendikleri amaç için gerekli olan süre boyunca ve ilgili yasal düzenlemelerde öngörülen süreler zarfında saklanmaktadır:
+                </p>
+
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Veri Kategorisi</th>
+                            <th>Saklama Süresi</th>
+                            <th>Hukuki Dayanak</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Üyelik ve Profil Verileri</td>
+                            <td>Hesap aktif olduğu sürece + 2 yıl</td>
+                            <td>Sözleşme ilişkisi ve zamanaşımı</td>
+                        </tr>
+                        <tr>
+                            <td>Mesajlaşma Kayıtları</td>
+                            <td>Hesap aktif olduğu sürece</td>
+                            <td>Hizmet sunumu</td>
+                        </tr>
+                        <tr>
+                            <td>Finansal Kayıtlar</td>
+                            <td>10 yıl</td>
+                            <td>Vergi Usul Kanunu, Türk Ticaret Kanunu</td>
+                        </tr>
+                        <tr>
+                            <td>İletişim Kayıtları</td>
+                            <td>3 yıl</td>
+                            <td>Tüketicinin Korunması Hakkında Kanun</td>
+                        </tr>
+                        <tr>
+                            <td>Güvenlik Kayıtları (Log)</td>
+                            <td>2 yıl</td>
+                            <td>5651 sayılı Kanun</td>
+                        </tr>
+                        <tr>
+                            <td>Pazarlama İzin Kayıtları</td>
+                            <td>İzin geri alınana kadar</td>
+                            <td>Ticari İletişim ve Ticari Elektronik İletiler Hakkında Yönetmelik</td>
+                        </tr>
+                        <tr>
+                            <td>Hukuki İşlem Kayıtları</td>
+                            <td>10 yıl</td>
+                            <td>Borçlar Kanunu zamanaşımı</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>
+                    Saklama süreleri sona erdiğinde, kişisel verileriniz KVKK ve ilgili mevzuata uygun olarak silinir, yok edilir veya anonim hale getirilir.
+                </p>
+
+                <h2>8. Kişisel Verilerin Güvenliği</h2>
+                <p>
+                    Aşkolog olarak, kişisel verilerinizin güvenliğini sağlamak için gerekli tüm teknik ve idari tedbirleri almaktayız:
+                </p>
+
+                <ul>
+                    <li><strong>Teknik Güvenlik:</strong> SSL/TLS şifreleme, güvenlik duvarları, DDoS koruması, penetrasyon testleri</li>
+                    <li><strong>Erişim Kontrolü:</strong> Çok faktörlü kimlik doğrulama, rol tabanlı erişim yönetimi, log kayıtları</li>
+                    <li><strong>Veri Şifreleme:</strong> Hassas verilerin hem iletimde hem de depolamada şifrelenmesi</li>
+                    <li><strong>Fiziksel Güvenlik:</strong> Güvenli veri merkezleri, 7/24 fiziksel güvenlik, kontrollü erişim</li>
+                    <li><strong>Yedekleme:</strong> Düzenli veri yedekleme, felaket kurtarma planları</li>
+                    <li><strong>Eğitim:</strong> Çalışanlarımıza düzenli veri güvenliği ve gizlilik eğitimleri</li>
+                    <li><strong>Sözleşmeler:</strong> Veri işleyen üçüncü taraflarla gizlilik ve güvenlik sözleşmeleri</li>
+                    <li><strong>Denetim:</strong> Düzenli güvenlik denetimleri ve uygunluk kontrolleri</li>
+                </ul>
+
+                <h2>9. Veri İhlali Bildirimi</h2>
+                <p>
+                    Kişisel verilerin hukuka aykırı olarak başkaları tarafından elde edilmesi halinde, bu durum en kısa sürede Kişisel Verileri Koruma Kurulu'na ve ilgili kişilere bildirilecektir. İhlal bildirimleri için gerekli süreçler ve prosedürler hazırlanmış ve uygulanmaktadır.
+                </p>
+
+                <h2>10. Çocukların Gizliliği</h2>
+                <p>
+                    Platformumuz 18 yaş altı bireylerin kullanımına açık değildir. 18 yaşından küçük kullanıcılardan bilerek kişisel veri toplamamaktayız. Eğer 18 yaşından küçük bir kullanıcıya ait veri topladığımızı tespit edersek, bu veriler derhal sistemlerimizden silinecektir.
+                </p>
+
+                <h2>11. Özel Nitelikli Kişisel Veriler</h2>
+                <p>
+                    Platformumuzda özel nitelikli kişisel veri (sağlık, biyometrik veri, cinsel yaşam vb.) işlenmesi söz konusu olduğunda, KVKK'nın 6. maddesi uyarınca açık rızanız alınmaktadır. Bu veriler yalnızca belirtilen amaçlar doğrultusunda ve yasal zorunluluklar çerçevesinde işlenmektedir.
+                </p>
+
+                <h2>12. Güncellemeler</h2>
+                <p>
+                    İşbu Aydınlatma Metni, yasal düzenlemelerdeki değişiklikler veya şirket politikalarındaki güncellemeler nedeniyle zaman zaman revize edilebilir. Güncellemeler bu sayfada yayınlanacak ve önemli değişiklikler hakkında kullanıcılar bilgilendirilecektir.
+                </p>
+
+                <h2>13. İletişim ve Başvuru</h2>
+                <p>
+                    KVKK kapsamındaki haklarınız veya kişisel verilerinizin işlenmesi hakkında sorularınız için bizimle iletişime geçebilirsiniz:
+                </p>
+
+                <div class="contact-box">
+                    <h3>KVKK İletişim Bilgileri</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kvkk@askolog.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+90 (212) 000 00 00</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-fax"></i>
+                            <span>askolog@hs03.kep.tr</span>
+                        </div>
+                    </div>
+                    <div class="contact-info" style="margin-top: 1rem;">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Maslak Mahallesi, Büyükdere Caddesi No:123, Sarıyer/İstanbul</span>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="iletisim.html" class="btn btn-primary">İletişim Formu</a>
+                    </p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 3rem;">
+                    <p><strong>Yürürlük Tarihi:</strong> İşbu KVKK Aydınlatma Metni 21 Ekim 2024 tarihinde yürürlüğe girmiş olup, bu tarih itibariyle geçerlidir. Kullanıcılarımız, Platform'u kullanmaya devam ederek bu Aydınlatma Metni'ni kabul etmiş sayılırlar.</p>
+                </div>
+
+                <div class="highlight-box">
+                    <p><strong>Ek Bilgi:</strong> Daha detaylı bilgi için <a href="gizlilik-politikasi.html">Gizlilik Politikamızı</a> ve <a href="kullanici-sozlesmesi.html">Kullanıcı Sözleşmemizi</a> inceleyebilirsiniz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Aşkolog</span>
+                    </div>
+                    <p class="footer-description">
+                        Türkiye'nin en güvenilir ve yenilikçi flört uygulaması.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Şirket</h4>
+                    <ul class="footer-links">
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                        <li><a href="hesap-silme.html">Hesap Silme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Yasal</h4>
+                    <ul class="footer-links">
+                        <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                        <li><a href="kullanici-sozlesmesi.html">Kullanıcı Sözleşmesi</a></li>
+                        <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+                        <li><a href="kvkk.html">KVKK</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aşkolog. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

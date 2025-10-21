@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aşkolog Hakkında - Türkiye'nin en yenilikçi dating uygulaması. Hikayemiz, misyonumuz, vizyonumuz ve değerlerimiz.">
+    <title>Hakkımızda - Aşkolog</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        /* About Hero Section */
+        .about-hero {
+            padding: 150px 0 100px;
+            background: linear-gradient(135deg, #fff5f7 0%, #fff 50%, #f0f8ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: var(--gradient-1);
+            opacity: 0.1;
+            border-radius: 50%;
+            animation: float 20s infinite ease-in-out;
+        }
+
+        .about-hero-content {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .about-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(135deg, rgba(255, 68, 88, 0.1), rgba(255, 107, 157, 0.1));
+            border: 1px solid rgba(255, 68, 88, 0.2);
+            border-radius: var(--radius-full);
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-title {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+            line-height: 1.1;
+        }
+
+        .about-description {
+            font-size: 1.3rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Story Section */
+        .story-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .story-image {
+            position: relative;
+        }
+
+        .story-image-wrapper {
+            width: 100%;
+            height: 500px;
+            background: var(--gradient-1);
+            border-radius: var(--radius-xl);
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .story-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+
+        .story-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .story-text h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+
+        .story-text p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-highlight {
+            background: linear-gradient(135deg, rgba(255, 68, 88, 0.05), rgba(255, 107, 157, 0.05));
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin-top: 2rem;
+        }
+
+        .story-highlight p {
+            margin-bottom: 0;
+            font-weight: 500;
+            color: var(--dark-color);
+        }
+
+        /* Mission Vision Section */
+        .mission-vision {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #fff5f7 0%, #fff 50%, #f0f8ff 100%);
+        }
+
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .mission-card,
+        .vision-card {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-card::before,
+        .vision-card::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            height: 200px;
+            background: var(--gradient-1);
+            opacity: 0.05;
+            border-radius: 50%;
+        }
+
+        .mission-vision-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-1);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--white);
+            margin-bottom: 2rem;
+        }
+
+        .vision-card .mission-vision-icon {
+            background: var(--gradient-2);
+        }
+
+        .mission-vision-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+
+        .mission-vision-text {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            line-height: 1.9;
+        }
+
+        /* Values Section */
+        .values-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            transition: var(--transition-base);
+            text-align: center;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+            border-color: transparent;
+        }
+
+        .value-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: var(--white);
+            margin: 0 auto 1.5rem;
+            transition: var(--transition-base);
+        }
+
+        .value-card:nth-child(2) .value-icon {
+            background: var(--gradient-2);
+        }
+
+        .value-card:nth-child(3) .value-icon {
+            background: var(--gradient-3);
+        }
+
+        .value-card:nth-child(4) .value-icon {
+            background: var(--gradient-4);
+        }
+
+        .value-card:hover .value-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .value-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .value-description {
+            color: var(--text-gray);
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #FF4458 0%, #FF6B9D 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: bgMove 20s linear infinite;
+        }
+
+        .stats-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .stats-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .stats-header h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .stats-header p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition-base);
+        }
+
+        .stat-box:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .stat-icon {
+            font-size: 3rem;
+            color: var(--white);
+            margin-bottom: 1rem;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--white);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+        }
+
+        /* Team Section */
+        .team-section {
+            padding: 100px 0;
+            background: var(--white);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .team-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-base);
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .team-image {
+            width: 100%;
+            height: 300px;
+            background: var(--gradient-1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-card:nth-child(2) .team-image {
+            background: var(--gradient-2);
+        }
+
+        .team-card:nth-child(3) .team-image {
+            background: var(--gradient-3);
+        }
+
+        .team-card:nth-child(4) .team-image {
+            background: var(--gradient-4);
+        }
+
+        .team-placeholder-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 6rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .team-info {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .team-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-role {
+            font-size: 1rem;
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .team-bio {
+            font-size: 0.95rem;
+            color: var(--text-gray);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .team-social-link {
+            width: 36px;
+            height: 36px;
+            background: var(--light-bg);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-gray);
+            transition: var(--transition-base);
+        }
+
+        .team-social-link:hover {
+            background: var(--gradient-1);
+            color: var(--white);
+            transform: translateY(-3px);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #fff5f7 0%, #fff 50%, #f0f8ff 100%);
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 4rem;
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .cta-content h2 {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .story-content,
+            .mission-vision-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .story-image {
+                order: -1;
+            }
+
+            .about-title {
+                font-size: 3rem;
+            }
+
+            .story-text h2,
+            .cta-content h2 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-hero {
+                padding: 120px 0 80px;
+            }
+
+            .about-title {
+                font-size: 2.5rem;
+            }
+
+            .about-description {
+                font-size: 1.1rem;
+            }
+
+            .story-text h2,
+            .stats-header h2,
+            .cta-content h2 {
+                font-size: 2rem;
+            }
+
+            .mission-vision-title {
+                font-size: 1.75rem;
+            }
+
+            .values-grid,
+            .stats-grid,
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-content {
+                padding: 3rem 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-title {
+                font-size: 2rem;
+            }
+
+            .story-text h2,
+            .stats-header h2 {
+                font-size: 1.75rem;
+            }
+
+            .cta-content h2 {
+                font-size: 1.75rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-heart"></i>
+                    <span class="logo-text">Aşkolog</span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                        <li><a href="../index.html#features" class="nav-link">Özellikler</a></li>
+                        <li><a href="../index.html#download" class="nav-link">İndir</a></li>
+                        <li><a href="hakkimizda.html" class="nav-link active">Hakkımızda</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                    </ul>
+                    <div class="nav-buttons">
+                        <a href="../index.html#download" class="btn btn-primary">Ücretsiz Başla</a>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <span class="about-badge">
+                    <i class="fas fa-heart"></i> Hakkımızda
+                </span>
+                <h1 class="about-title">
+                    Gerçek Bağlantılar İçin <span class="gradient-text">Tasarlandık</span>
+                </h1>
+                <p class="about-description">
+                    Aşkolog, insanların anlamlı ilişkiler kurmasına yardımcı olmak için tutkuyla çalışan bir ekip tarafından geliştirildi. Aşkı bulmanın herkes için kolay, güvenli ve eğlenceli olması gerektiğine inanıyoruz.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-image">
+                    <div class="story-image-wrapper">
+                        <i class="fas fa-book-open story-icon"></i>
+                    </div>
+                </div>
+                <div class="story-text">
+                    <h2>Hikayemiz</h2>
+                    <p>
+                        2020 yılında, modern hayatın getirdiği zorluklara rağmen insanların gerçek bağlantılar kurabileceği bir platform yaratma hedefiyle yola çıktık. Kurucu ekibimiz, kendi deneyimlerinden yola çıkarak mevcut dating uygulamalarının eksikliklerini fark etti.
+                    </p>
+                    <p>
+                        Yapay zeka teknolojisi ve kullanıcı psikolojisini bir araya getirerek, sadece fiziksel görünüme değil, kişilik uyumuna da odaklanan yenilikçi bir eşleşme sistemi geliştirdik. Her geçen gün büyüyen topluluğumuzla birlikte, binlerce insanın hayat arkadaşını bulmasına yardımcı olduk.
+                    </p>
+                    <p>
+                        Bugün Türkiye'nin en hızlı büyüyen dating uygulamalarından biriyiz ve amacımız daha fazla insanın mutluluğa ulaşmasına vesile olmak.
+                    </p>
+                    <div class="story-highlight">
+                        <p>
+                            <i class="fas fa-quote-left" style="color: var(--primary-color); margin-right: 0.5rem;"></i>
+                            "Teknoloji ve içtenliği birleştirerek, insanların gerçekten birbirleriyle bağlantı kurabilecekleri bir alan yaratmak istiyoruz."
+                            <i class="fas fa-quote-right" style="color: var(--primary-color); margin-left: 0.5rem;"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Misyon & Vizyon</span>
+                <h2 class="section-title">Nereye <span class="gradient-text">Gidiyoruz?</span></h2>
+            </div>
+            <div class="mission-vision-grid">
+                <div class="mission-card">
+                    <div class="mission-vision-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="mission-vision-title">Misyonumuz</h3>
+                    <p class="mission-vision-text">
+                        İnsanların hayatlarını değiştirecek anlamlı ilişkiler kurmasına olanak sağlamak. Teknoloji ve psikolojiyi birleştirerek, her bireyin kendine en uygun partneri bulmasına yardımcı olmak. Güvenli, samimi ve kullanıcı dostu bir platform sunarak, aşkı arayanlar için en iyi deneyimi yaratmak.
+                    </p>
+                </div>
+                <div class="vision-card">
+                    <div class="mission-vision-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="mission-vision-title">Vizyonumuz</h3>
+                    <p class="mission-vision-text">
+                        Türkiye'nin ve bölgenin en güvenilir, en yenilikçi dating platformu olmak. Yapay zeka ve makine öğrenmesi teknolojileriyle eşleşme başarı oranını maksimize ederek, milyonlarca insanın mutlu ilişkiler kurmasına öncülük etmek. Global bir marka olarak dünya çapında tanınan bir platform haline gelmek.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Değerlerimiz</span>
+                <h2 class="section-title">Neye <span class="gradient-text">İnanıyoruz?</span></h2>
+                <p class="section-description">
+                    Çalışmalarımızı şekillendiren ve her kararımızda rehber olan temel değerlerimiz
+                </p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="value-title">Güvenlik</h3>
+                    <p class="value-description">
+                        Kullanıcılarımızın güvenliği bizim en büyük önceliğimizdir. Kimlik doğrulama, fotoğraf moderasyonu ve 7/24 destek ile güvenli bir ortam sağlıyoruz.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-user-lock"></i>
+                    </div>
+                    <h3 class="value-title">Gizlilik</h3>
+                    <p class="value-description">
+                        Kişisel verileriniz en yüksek güvenlik standartlarıyla korunur. Verileriniz asla üçüncü taraflara satılmaz veya paylaşılmaz. Tam kontrol sizdedir.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="value-title">Şeffaflık</h3>
+                    <p class="value-description">
+                        Algoritmalarımız, politikalarımız ve uygulamalarımız hakkında açık ve dürüst iletişim kurarız. Kullanıcılarımıza karşı her zaman şeffaf oluruz.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3 class="value-title">Kullanıcı Memnuniyeti</h3>
+                    <p class="value-description">
+                        Kullanıcı deneyimi her şeyden önce gelir. Geri bildirimlerinizi dinler, sürekli iyileştirmeler yapar ve en iyi hizmeti sunmak için çalışırız.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-content">
+                <div class="stats-header">
+                    <h2>Rakamlarla Aşkolog</h2>
+                    <p>Başarımızı gösteren anlamlı istatistikler</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span class="stat-number">2M+</span>
+                        <div class="stat-label">Aktif Kullanıcı</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <span class="stat-number">500K+</span>
+                        <div class="stat-label">Mutlu Çift</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <span class="stat-number">10M+</span>
+                        <div class="stat-label">Eşleşme</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="stat-number">4.8</span>
+                        <div class="stat-label">Kullanıcı Puanı</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <span class="stat-number">50M+</span>
+                        <div class="stat-label">Günlük Mesaj</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <span class="stat-number">87%</span>
+                        <div class="stat-label">Başarı Oranı</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Ekibimiz</span>
+                <h2 class="section-title">Bizimle <span class="gradient-text">Tanışın</span></h2>
+                <p class="section-description">
+                    Aşkolog'u hayata geçiren tutkulu ve deneyimli ekibimiz
+                </p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-user team-placeholder-icon"></i>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Ahmet Yılmaz</h3>
+                        <div class="team-role">Kurucu & CEO</div>
+                        <p class="team-bio">
+                            10 yıllık teknoloji girişimciliği deneyimi. Dating sektöründe yenilikçi çözümler geliştirme konusunda uzman.
+                        </p>
+                        <div class="team-social">
+                            <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-user team-placeholder-icon"></i>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Ayşe Demir</h3>
+                        <div class="team-role">CTO & Kurucu Ortak</div>
+                        <p class="team-bio">
+                            Yapay zeka ve makine öğrenmesi alanında 8 yıllık deneyim. Eşleşme algoritmalarımızın mimarı.
+                        </p>
+                        <div class="team-social">
+                            <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-user team-placeholder-icon"></i>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Mehmet Kaya</h3>
+                        <div class="team-role">Tasarım Direktörü</div>
+                        <p class="team-bio">
+                            Kullanıcı deneyimi tasarımında 7 yıllık tecrübe. Aşkolog'un sezgisel ve modern arayüzünün yaratıcısı.
+                        </p>
+                        <div class="team-social">
+                            <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social-link"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <i class="fas fa-user team-placeholder-icon"></i>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Zeynep Arslan</h3>
+                        <div class="team-role">Pazarlama Direktörü</div>
+                        <p class="team-bio">
+                            Dijital pazarlama ve marka yönetimi alanında 9 yıllık deneyim. Aşkolog'un büyüme stratejisinin lideri.
+                        </p>
+                        <div class="team-social">
+                            <a href="#" class="team-social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="team-social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="team-social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Başarı Hikayenizi <span class="gradient-text">Yazın</span></h2>
+                <p>
+                    Binlerce mutlu çifte katılın. Aşkolog ile hayatınızı değiştirecek kişiyle tanışın. Ücretsiz hesap oluşturun ve eşleşmeye başlayın.
+                </p>
+                <div class="cta-buttons">
+                    <a href="../index.html#download" class="btn btn-hero">
+                        <i class="fas fa-download"></i> Hemen İndir
+                    </a>
+                    <a href="iletisim.html" class="btn btn-hero-outline">
+                        <i class="fas fa-envelope"></i> Bize Ulaşın
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Aşkolog</span>
+                    </div>
+                    <p class="footer-description">
+                        Türkiye'nin en güvenilir ve yenilikçi flört uygulaması. Gerçek aşkı bulmak için tasarlandı.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Şirket</h4>
+                    <ul class="footer-links">
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                        <li><a href="#">Kariyer</a></li>
+                        <li><a href="#">Basın Kiti</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Yardım</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Destek Merkezi</a></li>
+                        <li><a href="#">Güvenlik İpuçları</a></li>
+                        <li><a href="#">SSS</a></li>
+                        <li><a href="#">Topluluk Kuralları</a></li>
+                        <li><a href="#">Nasıl Kullanılır?</a></li>
+                        <li><a href="hesap-silme.html">Hesap Silme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Yasal</h4>
+                    <ul class="footer-links">
+                        <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                        <li><a href="kullanici-sozlesmesi.html">Kullanıcı Sözleşmesi</a></li>
+                        <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+                        <li><a href="kvkk.html">KVKK Aydınlatma Metni</a></li>
+                        <li><a href="#">Güvenlik Politikası</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aşkolog. Tüm hakları saklıdır.</p>
+                <div class="footer-badges">
+                    <span class="badge"><i class="fas fa-shield-alt"></i> SSL Güvenlik</span>
+                    <span class="badge"><i class="fas fa-check-circle"></i> Doğrulanmış</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

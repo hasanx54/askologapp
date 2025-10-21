@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aşkolog Çerez Politikası - Çerezlerin kullanımı, türleri ve yönetimi hakkında detaylı bilgi.">
+    <title>Çerez Politikası - Aşkolog</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .legal-page {
+            padding: 120px 0 80px;
+            background: var(--white);
+        }
+
+        .legal-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 4rem;
+        }
+
+        .legal-badge {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(135deg, rgba(255, 68, 88, 0.1), rgba(255, 107, 157, 0.1));
+            border: 1px solid rgba(255, 68, 88, 0.2);
+            border-radius: var(--radius-full);
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .legal-title {
+            font-family: var(--font-display);
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .legal-date {
+            color: var(--text-gray);
+            font-size: 1rem;
+        }
+
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--white);
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .legal-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark-color);
+            margin: 2.5rem 0 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+
+        .legal-content h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin: 2rem 0 1rem;
+        }
+
+        .legal-content p {
+            color: var(--text-gray);
+            line-height: 1.9;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .legal-content ul,
+        .legal-content ol {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .legal-content li {
+            color: var(--text-gray);
+            line-height: 1.9;
+            margin-bottom: 0.75rem;
+            font-size: 1.05rem;
+        }
+
+        .legal-content strong {
+            color: var(--dark-color);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255, 68, 88, 0.05), rgba(255, 107, 157, 0.05));
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            overflow-x: auto;
+            display: block;
+        }
+
+        .cookie-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .cookie-table th,
+        .cookie-table td {
+            padding: 1rem;
+            text-align: left;
+            border: 1px solid #e0e0e0;
+        }
+
+        .cookie-table th {
+            background: linear-gradient(135deg, rgba(255, 68, 88, 0.1), rgba(255, 107, 157, 0.1));
+            color: var(--dark-color);
+            font-weight: 600;
+        }
+
+        .cookie-table td {
+            color: var(--text-gray);
+        }
+
+        .cookie-type-box {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 1.5rem 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .cookie-type-box h4 {
+            margin: 0 0 1rem 0;
+            color: var(--dark-color);
+            font-size: 1.2rem;
+        }
+
+        .cookie-type-box p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            margin-top: 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .legal-title {
+                font-size: 2rem;
+            }
+
+            .legal-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .legal-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .legal-content h3 {
+                font-size: 1.25rem;
+            }
+
+            .cookie-table {
+                font-size: 0.9rem;
+            }
+
+            .cookie-table th,
+            .cookie-table td {
+                padding: 0.75rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-heart"></i>
+                    <span class="logo-text">Aşkolog</span>
+                </a>
+                <div class="nav-menu" id="navMenu">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                        <li><a href="../index.html#features" class="nav-link">Özellikler</a></li>
+                        <li><a href="../index.html#download" class="nav-link">İndir</a></li>
+                        <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                    </ul>
+                    <div class="nav-buttons">
+                        <a href="../index.html#download" class="btn btn-primary">Ücretsiz Başla</a>
+                    </div>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Legal Page -->
+    <section class="legal-page">
+        <div class="container">
+            <div class="legal-header">
+                <span class="legal-badge">
+                    <i class="fas fa-cookie-bite"></i> Çerez Bilgilendirmesi
+                </span>
+                <h1 class="legal-title">Çerez Politikası</h1>
+                <p class="legal-date">Son Güncelleme: 21 Ekim 2024</p>
+            </div>
+
+            <div class="legal-content">
+                <div class="highlight-box">
+                    <p><strong>Önemli Not:</strong> Bu Çerez Politikası, Aşkolog platformunun web sitesi ve mobil uygulamasında çerezlerin nasıl kullanıldığını açıklar. Platformumuzu kullanarak çerez kullanımını kabul etmiş olursunuz.</p>
+                </div>
+
+                <h2>1. Çerez Nedir?</h2>
+                <p>
+                    Çerezler (cookies), bir web sitesini ziyaret ettiğinizde tarayıcınız aracılığıyla cihazınıza (bilgisayar, telefon veya tablet) kaydedilen küçük metin dosyalarıdır. Çerezler, web sitesinin düzgün çalışmasını sağlar, kullanıcı deneyimini iyileştirir ve site sahiplerine kullanım analitiği sunar.
+                </p>
+
+                <h3>1.1. Çerezlerin İşlevi</h3>
+                <p>Çerezler aşağıdaki amaçlarla kullanılır:</p>
+                <ul>
+                    <li>Web sitesinin temel işlevlerinin çalışmasını sağlamak</li>
+                    <li>Kullanıcı tercihlerini hatırlamak</li>
+                    <li>Oturum bilgilerini saklamak</li>
+                    <li>Güvenlik sağlamak ve dolandırıcılığı önlemek</li>
+                    <li>Site performansını analiz etmek</li>
+                    <li>Kullanıcı deneyimini kişiselleştirmek</li>
+                    <li>Hedefli reklamlar göstermek</li>
+                </ul>
+
+                <h3>1.2. Çerez Türleri</h3>
+                <p><strong>Oturum Çerezleri (Session Cookies):</strong> Tarayıcınızı kapattığınızda otomatik olarak silinir.</p>
+                <p><strong>Kalıcı Çerezler (Persistent Cookies):</strong> Belirli bir süre boyunca veya manuel olarak silinene kadar cihazınızda kalır.</p>
+                <p><strong>Birinci Taraf Çerezleri:</strong> Doğrudan Aşkolog tarafından oluşturulur.</p>
+                <p><strong>Üçüncü Taraf Çerezleri:</strong> Reklam ağları, analitik hizmetler gibi üçüncü taraflar tarafından oluşturulur.</p>
+
+                <h2>2. Aşkolog'un Kullandığı Çerez Kategorileri</h2>
+
+                <div class="cookie-type-box">
+                    <h4><i class="fas fa-shield-alt" style="color: #27ae60; margin-right: 0.5rem;"></i> Zorunlu Çerezler</h4>
+                    <p><strong>Amaç:</strong> Platform'un temel işlevlerinin çalışması için zorunludur.</p>
+                    <p><strong>Kullanım:</strong> Oturum yönetimi, güvenlik, kimlik doğrulama</p>
+                    <p><strong>Saklama Süresi:</strong> Oturum sona erdiğinde veya 1 yıl</p>
+                    <p><strong>Reddetme:</strong> Bu çerezler olmadan platform çalışmaz, reddedilemez</p>
+                </div>
+
+                <div class="cookie-type-box" style="border-left-color: #3498db;">
+                    <h4><i class="fas fa-chart-line" style="color: #3498db; margin-right: 0.5rem;"></i> Performans Çerezleri</h4>
+                    <p><strong>Amaç:</strong> Platform performansını izler ve iyileştirir.</p>
+                    <p><strong>Kullanım:</strong> Sayfa yükleme süreleri, hata raporları, kullanım istatistikleri</p>
+                    <p><strong>Saklama Süresi:</strong> 2 yıl</p>
+                    <p><strong>Reddetme:</strong> Tarayıcı ayarlarından veya tercih merkezimizden reddedilebilir</p>
+                </div>
+
+                <div class="cookie-type-box" style="border-left-color: #9b59b6;">
+                    <h4><i class="fas fa-sliders-h" style="color: #9b59b6; margin-right: 0.5rem;"></i> İşlevsellik Çerezleri</h4>
+                    <p><strong>Amaç:</strong> Tercihlerinizi hatırlar ve gelişmiş özellikler sunar.</p>
+                    <p><strong>Kullanım:</strong> Dil tercihi, tema seçimi, konum bilgisi, önceki aramalar</p>
+                    <p><strong>Saklama Süresi:</strong> 1 yıl</p>
+                    <p><strong>Reddetme:</strong> Tarayıcı ayarlarından veya tercih merkezimizden reddedilebilir</p>
+                </div>
+
+                <div class="cookie-type-box" style="border-left-color: #e74c3c;">
+                    <h4><i class="fas fa-bullseye" style="color: #e74c3c; margin-right: 0.5rem;"></i> Hedefleme/Reklam Çerezleri</h4>
+                    <p><strong>Amaç:</strong> Size özel reklamlar gösterir ve reklam etkinliğini ölçer.</p>
+                    <p><strong>Kullanım:</strong> İlgi alanlarınıza göre özelleştirilmiş reklamlar, reklam performans analizi</p>
+                    <p><strong>Saklama Süresi:</strong> 1 yıl</p>
+                    <p><strong>Reddetme:</strong> Tarayıcı ayarlarından veya tercih merkezimizden reddedilebilir</p>
+                </div>
+
+                <h2>3. Kullanılan Çerezler Detayı</h2>
+
+                <h3>3.1. Zorunlu Çerezler</h3>
+                <div class="cookie-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Çerez Adı</th>
+                                <th>Amaç</th>
+                                <th>Süre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>askolog_session</td>
+                                <td>Oturum yönetimi ve kimlik doğrulama</td>
+                                <td>Oturum</td>
+                            </tr>
+                            <tr>
+                                <td>askolog_token</td>
+                                <td>Güvenlik tokeni ve CSRF koruması</td>
+                                <td>1 yıl</td>
+                            </tr>
+                            <tr>
+                                <td>askolog_auth</td>
+                                <td>Kullanıcı kimlik doğrulama durumu</td>
+                                <td>30 gün</td>
+                            </tr>
+                            <tr>
+                                <td>cookie_consent</td>
+                                <td>Çerez tercihlerinizi saklar</td>
+                                <td>1 yıl</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>3.2. Performans ve Analitik Çerezleri</h3>
+                <div class="cookie-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Çerez Adı</th>
+                                <th>Sağlayıcı</th>
+                                <th>Amaç</th>
+                                <th>Süre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>_ga</td>
+                                <td>Google Analytics</td>
+                                <td>Benzersiz kullanıcıları ayırt eder</td>
+                                <td>2 yıl</td>
+                            </tr>
+                            <tr>
+                                <td>_gid</td>
+                                <td>Google Analytics</td>
+                                <td>Benzersiz kullanıcıları ayırt eder</td>
+                                <td>24 saat</td>
+                            </tr>
+                            <tr>
+                                <td>_gat</td>
+                                <td>Google Analytics</td>
+                                <td>İstek oranını sınırlar</td>
+                                <td>1 dakika</td>
+                            </tr>
+                            <tr>
+                                <td>askolog_analytics</td>
+                                <td>Aşkolog</td>
+                                <td>Platform içi kullanım istatistikleri</td>
+                                <td>1 yıl</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>3.3. İşlevsellik Çerezleri</h3>
+                <div class="cookie-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Çerez Adı</th>
+                                <th>Amaç</th>
+                                <th>Süre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>askolog_lang</td>
+                                <td>Dil tercihini hatırlar</td>
+                                <td>1 yıl</td>
+                            </tr>
+                            <tr>
+                                <td>askolog_theme</td>
+                                <td>Tema tercihini saklar (açık/koyu mod)</td>
+                                <td>1 yıl</td>
+                            </tr>
+                            <tr>
+                                <td>askolog_location</td>
+                                <td>Konum tercihlerini saklar</td>
+                                <td>6 ay</td>
+                            </tr>
+                            <tr>
+                                <td>askolog_preferences</td>
+                                <td>Kullanıcı tercihlerini saklar</td>
+                                <td>1 yıl</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>3.4. Reklam ve Pazarlama Çerezleri</h3>
+                <div class="cookie-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Çerez Adı</th>
+                                <th>Sağlayıcı</th>
+                                <th>Amaç</th>
+                                <th>Süre</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>_fbp</td>
+                                <td>Facebook</td>
+                                <td>Hedefli reklamlar ve dönüşüm takibi</td>
+                                <td>3 ay</td>
+                            </tr>
+                            <tr>
+                                <td>_gcl_au</td>
+                                <td>Google AdSense</td>
+                                <td>Reklam performansı ölçümü</td>
+                                <td>3 ay</td>
+                            </tr>
+                            <tr>
+                                <td>IDE</td>
+                                <td>Google DoubleClick</td>
+                                <td>Hedefli reklam gösterimi</td>
+                                <td>1 yıl</td>
+                            </tr>
+                            <tr>
+                                <td>askolog_ads</td>
+                                <td>Aşkolog</td>
+                                <td>Kampanya ve reklam tercihleri</td>
+                                <td>1 yıl</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2>4. Üçüncü Taraf Çerezler</h2>
+                <p>
+                    Platform'umuzda bazı üçüncü taraf hizmet sağlayıcılarının çerezleri kullanılmaktadır. Bu hizmetler şunları içerir:
+                </p>
+
+                <h3>4.1. Analitik Hizmetler</h3>
+                <ul>
+                    <li><strong>Google Analytics:</strong> Kullanım istatistikleri ve ziyaretçi analitiği</li>
+                    <li><strong>Firebase Analytics:</strong> Mobil uygulama kullanım verileri</li>
+                    <li><strong>Hotjar:</strong> Kullanıcı davranış analizi ve ısı haritaları</li>
+                </ul>
+
+                <h3>4.2. Reklam Platformları</h3>
+                <ul>
+                    <li><strong>Google Ads:</strong> Hedefli reklam kampanyaları</li>
+                    <li><strong>Facebook Pixel:</strong> Sosyal medya reklamları ve yeniden pazarlama</li>
+                    <li><strong>Instagram Ads:</strong> Instagram reklamları ve dönüşüm takibi</li>
+                </ul>
+
+                <h3>4.3. Diğer Hizmetler</h3>
+                <ul>
+                    <li><strong>YouTube:</strong> Video içeriği yerleştirme</li>
+                    <li><strong>Google Maps:</strong> Konum hizmetleri ve harita gösterimi</li>
+                    <li><strong>Intercom:</strong> Müşteri destek sohbeti</li>
+                </ul>
+
+                <p>
+                    Bu üçüncü taraf hizmetlerin kendi çerez politikaları vardır. Detaylı bilgi için ilgili platformların politikalarını incelemenizi öneririz.
+                </p>
+
+                <h2>5. Çerez Yönetimi ve Kontrolü</h2>
+
+                <h3>5.1. Çerez Tercihlerinizi Değiştirme</h3>
+                <p>Çerez tercihlerinizi aşağıdaki yöntemlerle yönetebilirsiniz:</p>
+
+                <ol>
+                    <li><strong>Platform Tercih Merkezi:</strong> Platform ayarlarından çerez tercihlerinizi değiştirebilirsiniz</li>
+                    <li><strong>Tarayıcı Ayarları:</strong> Tarayıcınızın ayarlarından çerezleri yönetebilirsiniz</li>
+                    <li><strong>Çerez Bildirimi:</strong> İlk ziyaretinizde gördüğünüz çerez bildiriminden tercihlerinizi ayarlayabilirsiniz</li>
+                </ol>
+
+                <h3>5.2. Tarayıcı Ayarları ile Çerez Yönetimi</h3>
+                <p>Popüler tarayıcılarda çerez ayarlarına erişim:</p>
+
+                <ul>
+                    <li><strong>Google Chrome:</strong> Ayarlar > Gizlilik ve güvenlik > Çerezler ve diğer site verileri</li>
+                    <li><strong>Firefox:</strong> Ayarlar > Gizlilik ve Güvenlik > Çerezler ve Site Verileri</li>
+                    <li><strong>Safari:</strong> Tercihler > Gizlilik > Çerezler ve web sitesi verileri</li>
+                    <li><strong>Microsoft Edge:</strong> Ayarlar > Gizlilik, arama ve hizmetler > Çerezler</li>
+                    <li><strong>Opera:</strong> Ayarlar > Gizlilik ve güvenlik > Çerezler</li>
+                </ul>
+
+                <h3>5.3. Mobil Cihazlarda Çerez Yönetimi</h3>
+                <p><strong>iOS (iPhone/iPad):</strong> Ayarlar > Safari > Gizlilik ve Güvenlik</p>
+                <p><strong>Android:</strong> Ayarlar > Uygulama ayarları > Tarayıcı > Gizlilik > Çerezleri temizle</p>
+
+                <h3>5.4. Reklam Çerezlerini Reddetme</h3>
+                <p>Hedefleme çerezlerini reddetmek için aşağıdaki platformları kullanabilirsiniz:</p>
+                <ul>
+                    <li><strong>Google Ads Ayarları:</strong> <a href="https://adssettings.google.com/" target="_blank" rel="noopener">adssettings.google.com</a></li>
+                    <li><strong>Facebook Reklam Tercihleri:</strong> <a href="https://www.facebook.com/ads/preferences/" target="_blank" rel="noopener">facebook.com/ads/preferences</a></li>
+                    <li><strong>European Interactive Digital Advertising Alliance:</strong> <a href="http://www.youronlinechoices.eu/" target="_blank" rel="noopener">youronlinechoices.eu</a></li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>Önemli Uyarı:</strong> Zorunlu çerezleri reddetmeniz durumunda Platform'un bazı özellikleri düzgün çalışmayabilir. Performans, işlevsellik ve reklam çerezlerini dilediğiniz zaman reddedebilirsiniz.</p>
+                </div>
+
+                <h2>6. Çerezlerin Silinmesi</h2>
+                <p>
+                    Tarayıcınızın ayarlarından tüm çerezleri silebilirsiniz. Ancak çerezleri silerseniz, oturum bilgileriniz, tercihleriniz ve ayarlarınız kaybolacaktır. Çerezleri sildiğinizde Platform'u tekrar ziyaret ettiğinizde yeni bir kullanıcı olarak görüneceksiniz.
+                </p>
+
+                <h3>Çerezleri Silme Adımları:</h3>
+                <ol>
+                    <li>Tarayıcınızın ayarlar menüsüne gidin</li>
+                    <li>Gizlilik veya geçmiş bölümünü bulun</li>
+                    <li>"Çerezleri temizle" veya "Tarama verilerini sil" seçeneğini seçin</li>
+                    <li>Silmek istediğiniz zaman aralığını seçin (son saat, bugün, tüm zaman, vb.)</li>
+                    <li>Çerez seçeneğini işaretleyin</li>
+                    <li>Sil/Temizle butonuna tıklayın</li>
+                </ol>
+
+                <h2>7. Do Not Track (İzleme Yapma)</h2>
+                <p>
+                    Bazı tarayıcılar "Do Not Track" (DNT) özelliği sunar. Ancak, şu anda tüm web siteleri için standart bir DNT protokolü bulunmamaktadır. Platform'umuz şu anda DNT sinyallerine otomatik olarak yanıt vermemektedir, ancak çerez tercih merkezimizden izlemeyi devre dışı bırakabilirsiniz.
+                </p>
+
+                <h2>8. KVKK ve GDPR Uyumu</h2>
+
+                <h3>8.1. Kişisel Verilerin Korunması Kanunu (KVKK)</h3>
+                <p>
+                    Çerezler aracılığıyla toplanan veriler, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında işlenmektedir. Çerez kullanımı ile ilgili haklarınız:
+                </p>
+
+                <ul>
+                    <li>Hangi çerezlerin kullanıldığını öğrenme hakkı</li>
+                    <li>Çerez tercihlerinizi değiştirme hakkı</li>
+                    <li>Çerezler aracılığıyla toplanan verilerin silinmesini talep etme hakkı</li>
+                    <li>Çerez kullanımına itiraz etme hakkı</li>
+                </ul>
+
+                <p>
+                    Detaylı bilgi için <a href="gizlilik-politikasi.html">Gizlilik Politikamızı</a> ve <a href="kvkk.html">KVKK Aydınlatma Metni</a>'ni inceleyebilirsiniz.
+                </p>
+
+                <h3>8.2. Genel Veri Koruma Yönetmeliği (GDPR)</h3>
+                <p>
+                    Avrupa Birliği (AB) ve Avrupa Ekonomik Alanı'ndan (EEA) kullanıcılarımız için GDPR hükümlerine uyuyoruz. GDPR kapsamındaki haklarınız:
+                </p>
+
+                <ul>
+                    <li>Açık rıza ile çerez kullanımı</li>
+                    <li>İstediğiniz zaman rızanızı geri çekme</li>
+                    <li>Toplanan verilere erişim</li>
+                    <li>Verilerin silinmesini talep etme (unutulma hakkı)</li>
+                    <li>Veri taşınabilirliği</li>
+                </ul>
+
+                <h2>9. Çerez Politikası Güncellemeleri</h2>
+                <p>
+                    Bu Çerez Politikası'nı zaman zaman güncelleyebiliriz. Güncellemeler Platform'da yayınlandığı anda yürürlüğe girer. Önemli değişiklikler olduğunda sizi bilgilendireceğiz.
+                </p>
+
+                <p><strong>Son güncelleme tarihi:</strong> 21 Ekim 2024</p>
+
+                <h2>10. Çerez Kullanımı ile İlgili SSS</h2>
+
+                <h3>10.1. Çerezleri tamamen devre dışı bırakabilir miyim?</h3>
+                <p>
+                    Evet, tarayıcı ayarlarınızdan tüm çerezleri devre dışı bırakabilirsiniz. Ancak bu durumda Platform'un birçok özelliği çalışmayacaktır.
+                </p>
+
+                <h3>10.2. Çerezler kişisel bilgilerimi içeriyor mu?</h3>
+                <p>
+                    Zorunlu çerezler genellikle oturum bilgileri gibi teknik verileri içerir. Ancak bazı çerezler profil bilgileri ve tercihleriniz gibi kişisel verileri içerebilir.
+                </p>
+
+                <h3>10.3. Çerezler virüs taşır mı?</h3>
+                <p>
+                    Hayır. Çerezler sadece metin dosyalarıdır ve virüs veya zararlı yazılım taşıyamazlar.
+                </p>
+
+                <h3>10.4. Üçüncü taraf çerezlerini nasıl engellerim?</h3>
+                <p>
+                    Tarayıcınızın gizlilik ayarlarından "Üçüncü taraf çerezleri engelle" seçeneğini aktifleştirebilirsiniz.
+                </p>
+
+                <h3>10.5. Mobil uygulamada çerezler kullanılıyor mu?</h3>
+                <p>
+                    Mobil uygulamamızda çerez benzeri teknolojiler (SDK'lar, cihaz tanımlayıcıları) kullanılmaktadır. Bunlar benzer amaçlar için kullanılır.
+                </p>
+
+                <h2>11. İletişim</h2>
+                <p>
+                    Çerez Politikamız veya çerez kullanımımız hakkında sorularınız için bizimle iletişime geçebilirsiniz:
+                </p>
+
+                <div class="contact-box">
+                    <h3>Bizimle İletişime Geçin</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>gizlilik@askolog.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+90 (212) 000 00 00</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>İstanbul, Türkiye</span>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1.5rem;">
+                        <a href="iletisim.html" class="btn btn-primary">İletişim Formu</a>
+                    </p>
+                </div>
+
+                <div class="highlight-box" style="margin-top: 3rem;">
+                    <p><strong>Son Güncelleme:</strong> Bu Çerez Politikası en son 21 Ekim 2024 tarihinde güncellenmiştir ve bu tarih itibariyle yürürlüktedir.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Aşkolog</span>
+                    </div>
+                    <p class="footer-description">
+                        Türkiye'nin en güvenilir ve yenilikçi flört uygulaması.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Şirket</h4>
+                    <ul class="footer-links">
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                        <li><a href="hesap-silme.html">Hesap Silme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Yasal</h4>
+                    <ul class="footer-links">
+                        <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+                        <li><a href="kullanici-sozlesmesi.html">Kullanıcı Sözleşmesi</a></li>
+                        <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+                        <li><a href="kvkk.html">KVKK</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aşkolog. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
