@@ -589,8 +589,8 @@ window.addEventListener('load', () => {
 // ===================================
 
 console.log('%c👋 Merhaba Geliştirici!', 'font-size: 20px; font-weight: bold; color: #FF4458;');
-console.log('%cAşkolog ekibine katılmak ister misin?', 'font-size: 14px; color: #666;');
-console.log('%ckariyer@askolog.com adresine CV\'ini gönder!', 'font-size: 14px; color: #FF4458; font-weight: bold;');
+console.log('%cDuble ekibine katılmak ister misin?', 'font-size: 14px; color: #666;');
+console.log('%ckariyer@Duble.com adresine CV\'ini gönder!', 'font-size: 14px; color: #FF4458; font-weight: bold;');
 
 // ===================================
 // PERFORMANCE MONITORING
@@ -683,4 +683,4 @@ document.querySelectorAll('.app-button').forEach(btn => {
     });
 });
 
-console.log('%c✨ Aşkolog Landing Page Loaded Successfully!', 'font-size: 16px; font-weight: bold; color: #27ae60;');
+console.log('%c✨ Duble Landing Page Loaded Successfully!', 'font-size: 16px; font-weight: bold; color: #27ae60;');

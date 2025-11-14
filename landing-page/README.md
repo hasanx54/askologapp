@@ -1,10 +1,10 @@
-# Aşkolog - Dating App Landing Page
+# Duble - Dating App Landing Page
 
 Türkiye'nin en yenilikçi flört ve arkadaşlık uygulaması için modern, profesyonel ve tamamen responsive landing page.
 
 ## Proje Hakkında
 
-Bu proje, Aşkolog dating uygulaması için hazırlanmış tam kapsamlı bir landing page ve yasal dokümantasyon paketidir. Modern web tasarım prensipleri, kullanıcı deneyimi odaklı tasarım ve Türkiye yasal mevzuatına tam uyumlu içeriklerle hazırlanmıştır.
+Bu proje, Duble dating uygulaması için hazırlanmış tam kapsamlı bir landing page ve yasal dokümantasyon paketidir. Modern web tasarım prensipleri, kullanıcı deneyimi odaklı tasarım ve Türkiye yasal mevzuatına tam uyumlu içeriklerle hazırlanmıştır.
 
 ## Özellikler
 
@@ -191,13 +191,13 @@ Tüm sayfalar 3 temel breakpoint'te test edilmiştir:
 
 ## Lisans
 
-Bu proje Aşkolog için özel olarak geliştirilmiştir.
+Bu proje Duble için özel olarak geliştirilmiştir.
 
 ## İletişim
 
 Proje hakkında sorularınız için:
-- Email: info@askolog.com
-- Web: askolog.com
+- Email: info@Duble.com
+- Web: Duble.com
 
 ## Versiyon
 

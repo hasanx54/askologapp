@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Duble Çocuk Güvenliği Politikası. CSAE tanımı, raporlama kanalları, moderasyon protokolleri ve ebeveyn araçları hakkında bilgi alın.">
+    <title>Çocuk Güvenliği Politikası - Duble</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        :root {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #fff;
+            color: var(--dark-color);
+        }
+
+        .policy-hero {
+            padding: 140px 0 100px;
+            background: linear-gradient(135deg, #fff5f7 0%, #ffffff 60%, #f0f8ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .policy-hero::after {
+            content: '';
+            position: absolute;
+            bottom: -120px;
+            right: -80px;
+            width: 360px;
+            height: 360px;
+            background: var(--gradient-1);
+            opacity: 0.15;
+            border-radius: 50%;
+            filter: blur(0px);
+        }
+
+        .policy-hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .policy-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 999px;
+            background: rgba(255, 68, 88, 0.1);
+            border: 1px solid rgba(255, 68, 88, 0.2);
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .policy-title {
+            font-family: var(--font-display);
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .policy-description {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section:nth-of-type(even) {
+            background: #fafbff;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 820px;
+            margin: 0 auto 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+
+        .commitment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .commitment-card {
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            background: var(--white);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-base);
+            height: 100%;
+        }
+
+        .commitment-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .commitment-card i {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .pill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .pill {
+            padding: 0.45rem 1rem;
+            border-radius: 999px;
+            background: rgba(255, 68, 88, 0.08);
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            position: relative;
+        }
+
+        .timeline-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .timeline-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .timeline-card span {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .report-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .report-card {
+            padding: 2rem;
+            border-radius: var(--radius-xl);
+            background: linear-gradient(135deg, rgba(255, 68, 88, 0.08), rgba(255, 107, 157, 0.08));
+            border: 1px solid rgba(255, 68, 88, 0.2);
+        }
+
+        .contact-box {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            background: var(--white);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .resource-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 1rem;
+        }
+
+        .resource-list li {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .resource-list a {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .definition-box {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: #fff8f9;
+            border: 1px solid rgba(255, 68, 88, 0.2);
+            border-radius: var(--radius-xl);
+        }
+
+        @media (max-width: 768px) {
+            .policy-title {
+                font-size: 2.5rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="policy-hero">
+        <div class="container">
+            <div class="policy-hero-content">
+                <span class="policy-badge"><i class="fas fa-shield-heart"></i> Çocuk Güvenliği Taahhüdü</span>
+                <h1 class="policy-title">Çocuk Güvenliği Politikası</h1>
+                <p class="policy-description">
+                    Duble, dünya genelindeki çocukların çevrimiçi ortamda korunması için Google Play \"Çocuk Güvenliği Standartları Politikası\" ve Technology Coalition en iyi uygulamalarını referans alarak hareket eder. Sosyal keşif/dating kategorisindeki uygulamamız küçükleri korumayı tüm ürün yaşam döngüsü boyunca önceliklendirir.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Politika Taahhüdümüz</h2>
+                    <p>
+                        Uygulamamız yalnızca yetişkinlere yöneliktir; ancak çocukların cinsel istismarı ve çocuk istismarıyla (CSAE) mücadele eden standartlara uyumlu önleyici mekanizmalar uygularız. Aşağıdaki başlıklar Google Play tarafından zorunlu tutulan temel unsurları kapsamaktadır.
+                    </p>
+                </div>
+                <div class="commitment-grid">
+                    <article class="commitment-card">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>CSAE Standartları</h3>
+                        <p>Çocuk istismarı içeriklerini (CSAM) tespit etmek, engellemek ve yetkili makamlara bildirmek için iç yönergeler yayınladık.</p>
+                        <div class="pill-list">
+                            <span class="pill">NCMEC uyumluluğu</span>
+                            <span class="pill">Hash eşleşmesi</span>
+                        </div>
+                    </article>
+                    <article class="commitment-card">
+                        <i class="fas fa-comments"></i>
+                        <h3>Uygulama İçi Raporlama</h3>
+                        <p>Kullanıcılar sohbet ekranı, profil kartı ve web formu üzerinden tek tıkla kötüye kullanım raporu gönderebilir.</p>
+                        <div class="pill-list">
+                            <span class="pill">24/7 takip</span>
+                            <span class="pill">Yerelleştirilmiş dil</span>
+                        </div>
+                    </article>
+                    <article class="commitment-card">
+                        <i class="fas fa-scale-balanced"></i>
+                        <h3>Yasal Uyum</h3>
+                        <p>Türkiye Cumhuriyeti yasaları ve küresel CSAE mevzuatıyla uyumlu zorunlu bildirim protokolleri uygularız.</p>
+                        <div class="pill-list">
+                            <span class="pill">BTK koordinasyonu</span>
+                            <span class="pill">İç denetim</span>
+                        </div>
+                    </article>
+                    <article class="commitment-card">
+                        <i class="fas fa-user-check"></i>
+                        <h3>Çocuk Güvenliği Temas Noktası</h3>
+                        <p>Yetkili kuruluşlar için özel bir iletişim kişisi ve e-posta kanalı sağlarız.</p>
+                        <div class="pill-list">
+                            <span class="pill">safety@duble.app</span>
+                            <span class="pill">Yetkili yanıt süresi &lt; 24s</span>
+                        </div>
+                    </article>
+                </div>
+                <div class="definition-box">
+                    <h3>CSAE Nedir?</h3>
+                    <p>
+                        Google Play tanımına göre CSAE; çocukların cinsel istismara uğradığı, taciz edildiği veya cinsel amaçlarla hedef alındığı her türlü içerik ya da davranışı kapsar. Cinsel istismar amacıyla çocuk tacizine yönelik girişimler, sextortion, çocuk ticareti ve CSAM üretimi/bulundurulması bu sınıfa girer. Duble, bu davranışları tespit eden hesapları kalıcı olarak kapatır ve ilgili delilleri yasalar doğrultusunda raporlar.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Tespit ve Moderasyon Süreçleri</h2>
+                    <p>Çok katmanlı güvenlik yığınımız, küçükleri hedef alan içerikleri erken aşamada tespit etmeyi amaçlar.</p>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-card">
+                        <h3><i class="fas fa-id-card"></i> Yaş Doğrulama</h3>
+                        <p>- Yeni üyeler için kimlik/biometrik doğrulama<br>- Gelişmiş cihaz sinyali ve yapay zeka tabanlı yaş tahmini<br>- Reşit olmayan kullanıcıları otomatik engelleme</p>
+                    </article>
+                    <article class="timeline-card">
+                        <h3><i class="fas fa-robot"></i> İçerik Analizi</h3>
+                        <p>- Görüntü ve metinlerde CSAM hash taraması (PhotoDNA benzeri çözümler)<br>- Anahtar kelime ve davranış anomalisi tespiti<br>- Sürekli eşik ayarı için güvenlik mühendisleri</p>
+                    </article>
+                    <article class="timeline-card">
+                        <h3><i class="fas fa-headset"></i> İnsan Moderasyon</h3>
+                        <p>- Türkçe ve İngilizce bilen uzman ekip<br>- Sıralı önceliklendirme; acil CSAE raporları 15 dk içinde açılır<br>- Eğitim kayıtları yılda en az iki kez güncellenir</p>
+                    </article>
+                    <article class="timeline-card">
+                        <h3><i class="fas fa-hands-helping"></i> İş Ortakları</h3>
+                        <p>- Ulusal kolluk kuvvetleri ve NCMEC ile veri paylaşım protokolleri<br>- Technology Coalition en iyi uygulamalarıyla hizalı teknik güncellemeler</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Raporlama ve Müdahale Kanalları</h2>
+                    <p>Topluluk üyelerinin ve resmi makamların hızlı müdahale için kullanabileceği açık kanallar.</p>
+                </div>
+                <div class="report-grid">
+                    <article class="report-card">
+                        <h3><i class="fas fa-flag"></i> Uygulama İçi Rapor</h3>
+                        <p>Her profil ve mesaj ekranında bulunan \"Şikayet Et\" butonu CSAE şüphesi dahil tüm ihlaller için kullanılabilir. Raporlar otomatik olarak yüksek öncelik etiketlenir.</p>
+                    </article>
+                    <article class="report-card">
+                        <h3><i class="fas fa-envelope"></i> E-posta & Destek</h3>
+                        <p>Çocuk güvenliğiyle ilgili talepler <a href="mailto:safety@duble.app">safety@duble.app</a> adresine iletilir. Yetkili kişiler için PGP şifreleme opsiyonu sunulur.</p>
+                    </article>
+                    <article class="report-card">
+                        <h3><i class="fas fa-file-signature"></i> Web Formu</h3>
+                        <p><a href="https://duble.app/safety/report" target="_blank" rel="noopener">duble.app/safety/report</a> formu belge yükleme, olay zamanı ve mağdur bilgilerini güvenli şekilde toplar.</p>
+                    </article>
+                    <article class="report-card">
+                        <h3><i class="fas fa-phone"></i> Acil Destek</h3>
+                        <p>Hayati risk oluşturan CSAE vakaları için +90 850 000 00 00 numaralı hattımız 7/24 nöbetçi uzman tarafından yanıtlanır.</p>
+                    </article>
+                </div>
+                <div class="contact-box">
+                    <h3>Yetkili Temas Noktası</h3>
+                    <p>
+                        <strong>Ad:</strong> Elif Karaca (Çocuk Güvenliği Sorumlusu)<br>
+                        <strong>E-posta:</strong> <a href="mailto:safety@duble.app">safety@duble.app</a><br>
+                        <strong>Yanıt Süresi:</strong> Maksimum 24 saat (acil durumlarda 60 dakika)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Veri Koruma ve Ebeveyn Araçları</h2>
+                    <p>Çocukların verilerinin korunması ve ebeveynlerin bilinçlendirilmesi için tasarlanan ek kontroller.</p>
+                </div>
+                <div class="commitment-grid">
+                    <article class="commitment-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Veri Minimizasyonu</h3>
+                        <p>Reşit olmayan kullanıcılara ait veriler tespit edildiğinde kalıcı olarak silinir ve geri getirilemez.</p>
+                    </article>
+                    <article class="commitment-card">
+                        <i class="fas fa-user-lock"></i>
+                        <h3>Gizlilik Duvarları</h3>
+                        <p>Moderasyon ekiplerinde görev yapan personel için rol tabanlı erişim; CSAE materyali yalnızca yetkili kişilerin görmesini sağlar.</p>
+                    </article>
+                    <article class="commitment-card">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Ebeveyn Eğitimi</h3>
+                        <p>Blog ve e-posta serileriyle çevrimiçi güvenlik ipuçları, grooming belirtileri ve acil destek hatları hakkında bilgilendirme yaparız.</p>
+                    </article>
+                    <article class="commitment-card">
+                        <i class="fas fa-sync"></i>
+                        <h3>Periyodik Değerlendirme</h3>
+                        <p>Politika ve araç setimiz yılda en az iki kez denetlenir; yeni tehdit modellerine göre güncellenir.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Politika Kaynakları</h2>
+                    <p>
+                        Güncel gereksinimlere uyum sağlamak için aşağıdaki açık kaynaklar referans alınır. Tüm bağlantılar herkese açıktır ve düzenlenemez.
+                    </p>
+                </div>
+                <ul class="resource-list">
+                    <li>
+                        <i class="fas fa-external-link-alt"></i>
+                        <a href="https://support.google.com/googleplay/android-developer/answer/14747720" target="_blank" rel="noopener">
+                            Google Play Çocuk Güvenliği Standartları Politikası (CSA E)
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-external-link-alt"></i>
+                        <a href="https://www.technologycoalition.org/developer-good-practices-combating-online-child-sexual-exploitation-and-abuse" target="_blank" rel="noopener">
+                            Technology Coalition CSAE En İyi Uygulamaları
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-external-link-alt"></i>
+                        <a href="https://report.cybertip.org/" target="_blank" rel="noopener">
+                            NCMEC CyberTipline
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="padding: 40px 0; background: #05010a; color: #fff;">
+        <div class="container">
+            <p style="text-align: center; font-size: 0.95rem; color: rgba(255,255,255,0.7);">
+                © 2024 Duble. Bu sayfa çocuk güvenliği yükümlülüklerimizi bilgilendirme amacıyla özetler; uygulama içi şartlar ve destek kanalları önceliklidir.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
